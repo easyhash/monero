@@ -29,7 +29,7 @@ RUN mkdir -p /daemon && mkdir -p /daemon/data && mkdir -p /daemon
 
 # Install Daemon
 WORKDIR /daemon/
-RUN wget -Lq -O monero-linux-x64.tar.bz2 https://downloads.getmonero.org/cli/monero-linux-x64-v0.14.0.0.tar.bz2
+RUN wget -Lq -O monero-linux-x64.tar.bz2 https://downloads.getmonero.org/cli/linux64
 RUN tar -xjf monero-linux-x64.tar.bz2 . && mv -f monero-v*/* .
 
 EXPOSE 18081 18082
